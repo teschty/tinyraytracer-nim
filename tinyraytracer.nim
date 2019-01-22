@@ -158,11 +158,7 @@ proc render(spheres: seq[Sphere], lights: seq[Light]) =
             c = c * (1.0 / m)
 
         for j in 0..2:
-            let clamped = max(0.0, min(1.0, c[j]))
-
-            if clamped >= 1.0:
-                echo "oh"
-                
+            let clamped = max(0.0, c[j])
             output.write char(255 * clamped)
 
         i += 1

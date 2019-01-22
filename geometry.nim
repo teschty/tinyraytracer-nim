@@ -24,7 +24,6 @@ proc `*`*[N, T](a: Vec[N, T], b: Vec[N, T]): T =
     for i in 0..N - 1:
         result += (a[i] * b[i])
 
-# TODO: mayhaps change this to +=
 proc `+`*[N, T](a: Vec[N, T], b: Vec[N, T]): Vec[N, T] =
     result = newVec(T(0), T(0), T(0))
 
