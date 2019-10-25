@@ -1,6 +1,9 @@
 import geometry
 import math
 import strformat
+import trigonometry
+import algebra
+import calculus
 
 type Light = ref object
     pos: Vec3f
