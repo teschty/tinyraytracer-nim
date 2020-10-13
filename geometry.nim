@@ -53,7 +53,3 @@ proc normalize*[T](vec: Vec3[T], l = T(1)): Vec3[T] =
 
 proc cross*[T](a: Vec3[T], b: Vec3[T]): Vec3[T] =
     newVec(a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x)
-
-proc `$`*[N, T](vec: Vec[N, T]): string =
-    for i in 0..N - 1:
-        result &= $vec[i] & " "
