@@ -19,7 +19,7 @@ proc newMaterial(r: float, a: Vec4f, color: Vec3f, spec: float): Material =
     Material(refractiveIndex: r, albedo: a, diffuseColor: color, specularExponent: spec)
 
 proc newMaterial(): Material =
-    Material(refractiveIndex: 1, albedo: newVec(1.0, 0.0, 0.0, 0.0), diffuseColor: newVec(0.0, 0.0, 0.0), specularExponent: 0.0)
+    Material(refractiveIndex: 1, albedo: newVec(0.9, 0.0, 0.0, 0.0), diffuseColor: newVec(0.0, 0.0, 0.0), specularExponent: 0.0)
 
 type Sphere = ref object
     center: Vec3f
